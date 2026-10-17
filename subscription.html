@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Circle Subscription — ShipDecKK</title>
+    <meta name="description" content="Subscribe to ShipDecKK Elite Circle for exclusive private sea-trials, new vessel drop notices, and priority shipyard build slots.">
+    <link rel="website icon" type="image/png" href="assets/img/logo-shipdeckk.png">
+    <link rel="preload" as="image" href="assets/img/4223_3ba0f.webp">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Header Navigation -->
+    <header class="header">
+        <div class="header-brand">
+            <a href="index.html">
+                <img src="assets/img/logo-shipdeckk.png" alt="ShipDecKK Crest Logo" class="logo" width="125" height="42">
+            </a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="navigation"> 
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="service.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="subscription.html" class="nav-cta-btn active">Join Circle</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner with Cinematic Overlay -->
+    <section class="Header_photo">
+        <picture>
+            <source srcset="assets/img/4223_3ba0f.webp" type="image/webp">
+            <img src="assets/img/4223_3ba0f.jpg" alt="Vessel cruising through tranquil waters" fetchpriority="high">
+        </picture>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">✦ Privileged Access</div>
+            <h1 class="hero-title">Join The <span class="gold-accent">ShipDecKK Circle</span></h1>
+            <p class="hero-subtitle">
+                Receive confidential fleet dossiers, invitations to private sea-trials, and priority shipyard build allocations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Subscription Form Container -->
+    <section>
+        <div class="Cargoship">
+            <h2>Membership Application</h2>
+        </div>
+
+        <div class="kontainer">
+            <form id="subscriptionForm" onsubmit="return validation(event)" novalidate>
+                <h2 id="title">Elite Membership</h2>
+                <p class="form-subtitle">Complete your confidential credentials to enroll</p>
+
+                <div class="form-attribute">
+                    <label for="name">Full Legal Name</label>
+                    <input type="text" id="name" placeholder="e.g. Lord Everton Deckk" autocomplete="name" required>
+                </div>
+
+                <div class="form-attribute">
+                    <label for="email">Personal Email Address</label>
+                    <input type="email" id="email" placeholder="e.g. everton@domain.com" autocomplete="email" required>
+                </div>
+
+                <div class="form-attribute">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" min="1" max="120" placeholder="18 – 99" required>
+                </div>
+
+                <div class="form-attribute">
+                    <label for="password">Security Password</label>
+                    <input type="password" id="password" placeholder="Minimum 6 characters" autocomplete="new-password" required>
+                </div>
+
+                <div class="form-attribute">
+                    <label>Gender Identification</label>
+                    <div class="gender-options">
+                        <label for="male">
+                            <input type="radio" name="gender" id="male" value="male">
+                            Male
+                        </label>
+                        <label for="female">
+                            <input type="radio" name="gender" id="female" value="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-attribute checkbox-attribute">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">
+                        I accept the ShipDecKK Maritime Privacy Protocol, terms of confidential brokerage, and membership covenants.
+                    </label>
+                </div>
+
+                <button type="submit">Complete Membership Enrollment &rarr;</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Luxury Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="contact_us">
+                <h3>Contact Concierge</h3>
+                <p>📍 <a href="https://www.google.com/maps/place/La+Ciotat,+France" target="_blank" rel="noopener">La Ciotat Shipyard, France</a></p>
+                <p>📞 <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p>📧 <a href="mailto:info@shipdeckk.com">info@shipdeckk.com</a></p>
+            </div>
+
+            <div class="closing">
+                <div class="closing-brand">ShipDec<span>KK</span></div>
+                <p>ShipDecKK is your premier global partner in bespoke luxury yachts and commercial vessels. Excellence in engineering, naval architecture, and marine concierge since 2020.</p>
+                <p class="closing-copyright">&copy; 2026 ShipDecKK. All rights reserved.</p>
+            </div>
+
+            <div class="follow_us">
+                <h3>Social Fleet</h3>
+                <div class="iconsosmed">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <img src="assets/img/icons8-instagram-48.webp" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+                        <img src="assets/img/icons8-youtube-32.webp" alt="YouTube">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+                        <img src="assets/img/icons8-twitter-bird-50.webp" alt="Twitter">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="assets/img/icons8-facebook-48.webp" alt="Facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <img src="assets/img/icons8-linked-in-50.webp" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">
+                        <img src="assets/img/icons8-tiktok-50.webp" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>

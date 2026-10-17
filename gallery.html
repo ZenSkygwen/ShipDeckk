@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Gallery — ShipDecKK</title>
+    <meta name="description" content="Explore ShipDecKK's premier fleet: high-capacity ocean cargo ships, ultra-luxury bespoke superyachts, and transoceanic luxury liners.">
+    <link rel="website icon" type="image/png" href="assets/img/logo-shipdeckk.png">
+    <link rel="preload" as="image" href="assets/img/4223_3ba0f.webp">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Header Navigation -->
+    <header class="header">
+        <div class="header-brand">
+            <a href="index.html">
+                <img src="assets/img/logo-shipdeckk.png" alt="ShipDecKK Crest Logo" class="logo" width="125" height="42">
+            </a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="navigation"> 
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="service.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="subscription.html" class="nav-cta-btn">Join Circle</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner with Cinematic Overlay -->
+    <section class="Header_photo">
+        <picture>
+            <source srcset="assets/img/4223_3ba0f.webp" type="image/webp">
+            <img src="assets/img/4223_3ba0f.jpg" alt="Vessel cruising through tranquil waters" fetchpriority="high">
+        </picture>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">✦ Curated Fleet Portfolio</div>
+            <h1 class="hero-title">Find Your <span class="gold-accent">Dream Vessel</span></h1>
+            <p class="hero-subtitle">
+                Inspect specifications, capacities, and hydrodynamic profiles across our world-class maritime catalog.
+            </p>
+        </div>
+    </section>
+
+    <!-- Interactive Filter & Live Search Controls -->
+    <section class="gallery-controls">
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-category="all">All Vessels</button>
+            <button class="filter-btn" data-category="cargo">Cargo Ships</button>
+            <button class="filter-btn" data-category="yacht">High-End Yachts</button>
+            <button class="filter-btn" data-category="liner">Luxury Liners</button>
+        </div>
+        <div class="gallery-search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="gallerySearch" class="gallery-search-input" placeholder="Search by name, spec, or tonnage..." aria-label="Search fleet">
+        </div>
+    </section>
+
+    <!-- Empty Search State -->
+    <div id="noResults" class="no-results-state">
+        <h3 style="font-family: var(--font-heading); color: var(--gold-light); margin-bottom: 8px;">No Vessels Found</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Try modifying your search criteria or switching to a different category tab.</p>
+    </div>
+
+    <!-- Category 1: Cargo Ships -->
+    <section class="gallery-section" data-section-category="cargo">
+        <div class="Cargoship">
+            <h2>Commercial Cargo Ships</h2>
+        </div>
+
+        <div class="CargoShip-grid">
+            <!-- Cargo 1 -->
+            <div class="soldyacht" data-category="cargo">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Bulk & Container</span>
+                    <picture>
+                        <source srcset="assets/img/cargo-ships-1.webp" type="image/webp">
+                        <img src="assets/img/cargo-ships-1.jpg" alt="M.S. Titan V cargo ship" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">M.S. Titan V</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Crew Capacity">
+                        <p>20–25 Crew</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>17 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$988,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>230 m</p>
+                    </div>
+                </div>
+                <p>Designed for transporting massive tonnage across transoceanic routes. Measuring 230m in length with an 80,000-ton displacement, powered by high-efficiency low-emission diesel engineering.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Cargo 2 -->
+            <div class="soldyacht" data-category="cargo">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Intercontinental Carrier</span>
+                    <picture>
+                        <source srcset="assets/img/cargo-ships-2.webp" type="image/webp">
+                        <img src="assets/img/cargo-ships-2.jpg" alt="S.S. Felix 500 cargo ship" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">S.S. Felix 500</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Crew Capacity">
+                        <p>20–24 Crew</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>18 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$999,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>210 m</p>
+                    </div>
+                </div>
+                <p>Optimized for long-distance international trade routes with 65,000-ton cargo holds, automated crane logistics support, and state-of-the-art navigation telemetry.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Cargo 3 -->
+            <div class="soldyacht" data-category="cargo">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Heavy Freight</span>
+                    <picture>
+                        <source srcset="assets/img/cargo-ships-3.webp" type="image/webp">
+                        <img src="assets/img/cargo-ships-3.jpg" alt="XY Titanic cargo ship" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">XY Titanic</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Crew Capacity">
+                        <p>25–30 Crew</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>19 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$1,568,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>250 m</p>
+                    </div>
+                </div>
+                <p>Built with double-reinforced hulls for heavy weather Arctic and Atlantic trade lanes. Carries up to 90,000 tons of containerized cargo and raw materials.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Cargo 4 -->
+            <div class="soldyacht" data-category="cargo">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Dual-Fuel Hybrid</span>
+                    <picture>
+                        <source srcset="assets/img/cargo-ships-4.webp" type="image/webp">
+                        <img src="assets/img/cargo-ships-4.jpg" alt="Sea Monster 7600 cargo ship" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Sea Monster 7600</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Crew Capacity">
+                        <p>30–32 Crew</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>19 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$1,968,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>270 m</p>
+                    </div>
+                </div>
+                <p>Next-generation 100,000-ton capacity flagship featuring dual-fuel LNG propulsion, AI-assisted path routing, and reduced carbon footprint certifications.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Cargo 5 -->
+            <div class="soldyacht" data-category="cargo">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">High-Efficiency</span>
+                    <picture>
+                        <source srcset="assets/img/cargo-ships-5.webp" type="image/webp">
+                        <img src="assets/img/cargo-ships-5.jpg" alt="KF E45 Max cargo ship" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">KF E45 Max</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Crew Capacity">
+                        <p>19–22 Crew</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>19.65 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$976,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>200 m</p>
+                    </div>
+                </div>
+                <p>Engineered for speed, fast port turnaround, and versatile mixed cargo freight across Asia-Pacific and Europe-Middle East trade corridors.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Cargo 6 -->
+            <div class="soldyacht" data-category="cargo">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Container Carrier</span>
+                    <picture>
+                        <source srcset="assets/img/kargo-ship-6.webp" type="image/webp">
+                        <img src="assets/img/kargo-ship-6.jpg" alt="EverGreen Ace cargo ship" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">EverGreen Ace</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Crew Capacity">
+                        <p>19–23 Crew</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>16 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$1,110,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>232 m</p>
+                    </div>
+                </div>
+                <p>Equipped with specialized refrigerated container bays and lightweight composite hull enhancements ensuring lower fuel burn per nautical mile.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 2: High-End Yachts -->
+    <section class="gallery-section" data-section-category="yacht">
+        <div class="Cargoship">
+            <h2>High-End Luxury Yachts</h2>
+        </div>
+
+        <div class="CargoShip-grid">
+            <!-- Yacht 1 -->
+            <div class="soldyacht" data-category="yacht">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Superyacht Flagship</span>
+                    <picture>
+                        <source srcset="assets/img/high-end-yachts.webp" type="image/webp">
+                        <img src="assets/img/high-end-yachts.jpg" alt="Aquilla Serenity 110 superyacht" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Aquilla Serenity 110</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Guests">
+                        <p>30–36 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>21 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$240,000,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>99 m</p>
+                    </div>
+                </div>
+                <p>Ultra-luxury ocean palace featuring a touch-and-go helipad, private cinema, glass-bottom infinity pool, Turkish spa, and 360° master suite deck.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Yacht 2 -->
+            <div class="soldyacht" data-category="yacht">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Grand Cruiser</span>
+                    <picture>
+                        <source srcset="assets/img/high-end-yachts-2.webp" type="image/webp">
+                        <img src="assets/img/high-end-yachts-2.jpg" alt="Oceanis Vela 88 luxury yacht" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Oceanis Vela 88</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Guests">
+                        <p>20–26 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>18 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$170,000,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>88 m</p>
+                    </div>
+                </div>
+                <p>Combines classical naval majesty with silent electric cruising. Features an underground wine cellar, panoramic salon, and sundeck Jacuzzi.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Yacht 3 -->
+            <div class="soldyacht" data-category="yacht">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Custom Megayacht</span>
+                    <picture>
+                        <source srcset="assets/img/high-end-yachts-6.webp" type="image/webp">
+                        <img src="assets/img/high-end-yachts-6.jpg" alt="Celestia Nova 95 luxury yacht" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Celestia Nova 95</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Guests">
+                        <p>25–30 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>20 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$200,000,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>95 m</p>
+                    </div>
+                </div>
+                <p>Dynamic stabilization, glass-ceiling dining hall, two-tier atrium lounge, and complete onboard wellness studio designed for transatlantic voyaging.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Yacht 4 -->
+            <div class="soldyacht" data-category="yacht">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Italian Atelier</span>
+                    <picture>
+                        <source srcset="assets/img/high-end-yahcts-4.webp" type="image/webp">
+                        <img src="assets/img/high-end-yahcts-4.jpg" alt="Lusso Mirage 78 luxury yacht" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Lusso Mirage 78</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Guests">
+                        <p>18–22 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>19 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$145,000,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>78 m</p>
+                    </div>
+                </div>
+                <p>Artistic minimalist styling by world-renowned naval designers. Features full floor-to-ceiling salon glass, rear beach club, and private piano lounge.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Yacht 5 -->
+            <div class="soldyacht" data-category="yacht">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Royal Sovereign</span>
+                    <picture>
+                        <source srcset="assets/img/high-end-yachts-5.webp" type="image/webp">
+                        <img src="assets/img/high-end-yachts-5.jpg" alt="Titanis Crown 120 luxury yacht" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Titanis Crown 120</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Guests">
+                        <p>30–40 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>23 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$290,000,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>120 m</p>
+                    </div>
+                </div>
+                <p>Commanding flagship built for heads of state and royal dignitaries. Features an onboard ballroom, indoor heated pool, executive conference center, and elevator.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Yacht 6 -->
+            <div class="soldyacht" data-category="yacht">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Modernist Megayacht</span>
+                    <picture>
+                        <source srcset="assets/img/high-end-yachts-6.webp" type="image/webp">
+                        <img src="assets/img/high-end-yachts-6.jpg" alt="Orion Majesty 102 luxury yacht" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Orion Majesty 102</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Guests">
+                        <p>28–32 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>20 knots</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$221,230,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>102 m</p>
+                    </div>
+                </div>
+                <p>Crafted with Carrera marble accents, ambient acoustic engineering, large garage for tenders and seabobs, and a dual-deck owner’s penthouse suite.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 3: Luxury Liners -->
+    <section class="gallery-section" data-section-category="liner">
+        <div class="Cargoship">
+            <h2>Transoceanic Luxury Liners</h2>
+        </div>
+
+        <div class="CargoShip-grid">
+            <!-- Liner 1 -->
+            <div class="soldyacht" data-category="liner">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Transatlantic Liner</span>
+                    <picture>
+                        <source srcset="assets/img/lux-lin-1.webp" type="image/webp">
+                        <img src="assets/img/lux-lin-1.jpg" alt="Ocean Belle 210 luxury ocean liner" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Ocean Belle 210</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Capacity">
+                        <p>1,250 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>22 kn</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$640,000,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>210 m</p>
+                    </div>
+                </div>
+                <p>Ten passenger decks filled with oceanview balcony staterooms, fine-dining restaurants, live orchestra theater, and gyroscope-stabilized promenade decks.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Liner 2 -->
+            <div class="soldyacht" data-category="liner">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Boutique Cruise Liner</span>
+                    <picture>
+                        <source srcset="assets/img/lux-lin-2.webp" type="image/webp">
+                        <img src="assets/img/lux-lin-2.jpg" alt="Marina Crown 198 luxury cruise liner" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Marina Crown 198</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Capacity">
+                        <p>1,100 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>21.5 kn</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$580,000,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>198 m</p>
+                    </div>
+                </div>
+                <p>Moderate draft allows docking in boutique Mediterranean and Caribbean fjords where larger liners cannot anchor. Renowned for curated gastronomy and art galleries.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Liner 3 -->
+            <div class="soldyacht" data-category="liner">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Observatory Cruiser</span>
+                    <picture>
+                        <source srcset="assets/img/lux-lin-3.webp" type="image/webp">
+                        <img src="assets/img/lux-lin-3.jpg" alt="Celestial Horizon 225 ocean liner" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Celestial Horizon 225</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Capacity">
+                        <p>1,600 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>23 kn</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$690,000,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>225 m</p>
+                    </div>
+                </div>
+                <p>Showcases expansive glass atrium architecture, open botanical sky-gardens, stargazing observatory dome, and personalized AI concierge suites.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Liner 4 -->
+            <div class="soldyacht" data-category="liner">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Heritage Club Liner</span>
+                    <picture>
+                        <source srcset="assets/img/lux-lin-4.webp" type="image/webp">
+                        <img src="assets/img/lux-lin-4.jpg" alt="Golden Vista 184 ocean liner" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Golden Vista 184</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Capacity">
+                        <p>950 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>20 kn</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$470,450,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>184 m</p>
+                    </div>
+                </div>
+                <p>Intimate luxury experience with mahogany heritage appointments, rare manuscript library, quiet meditation decks, and five-star Michelin culinary venues.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Liner 5 -->
+            <div class="soldyacht" data-category="liner">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Mega-Resort Liner</span>
+                    <picture>
+                        <source srcset="assets/img/lux-lin-5.webp" type="image/webp">
+                        <img src="assets/img/lux-lin-5.jpg" alt="Aurora Sapphire 240 ocean liner" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Aurora Sapphire 240</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Capacity">
+                        <p>1,850 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>24 kn</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$710,000,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>240 m</p>
+                    </div>
+                </div>
+                <p>Vibrant floating luxury city featuring top-deck water parks, 3D cinema domes, private butler penthouses, and world-class theatrical entertainment stages.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+
+            <!-- Liner 6 -->
+            <div class="soldyacht" data-category="liner">
+                <div class="ship-media-wrapper">
+                    <span class="ship-badge">Executive Summit Liner</span>
+                    <picture>
+                        <source srcset="assets/img/lux-lin-6.webp" type="image/webp">
+                        <img src="assets/img/lux-lin-6.jpg" alt="Regal Tide 205 ocean liner" class="yachts" loading="lazy">
+                    </picture>
+                </div>
+                <h3 class="yachtname">Regal Tide 205</h3>
+                <div class="infoyacht">
+                    <div class="spec-pill">
+                        <img src="assets/img/logo-orang.webp" alt="Capacity">
+                        <p>1,300 Guests</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/speedometer-icon-illustration-png.webp" alt="Speed">
+                        <p>22.5 kn</p>
+                    </div>
+                    <div class="spec-pill price">
+                        <img src="assets/img/664936_sign_512x512.webp" alt="Price">
+                        <p>$661,530,000</p>
+                    </div>
+                    <div class="spec-pill">
+                        <img src="assets/img/meteran-1024.webp" alt="Length">
+                        <p>205 m</p>
+                    </div>
+                </div>
+                <p>Engineered for corporate summits and executive retreats. Features global satellite conference hubs, luxury shopping arcades, and full-deck thermal spas.</p>
+                <a href="subscription.html" class="card-action-btn">Inquire Charter / Sale &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="contact_us">
+                <h3>Contact Concierge</h3>
+                <p>📍 <a href="https://www.google.com/maps/place/La+Ciotat,+France" target="_blank" rel="noopener">La Ciotat Shipyard, France</a></p>
+                <p>📞 <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p>📧 <a href="mailto:info@shipdeckk.com">info@shipdeckk.com</a></p>
+            </div>
+
+            <div class="closing">
+                <div class="closing-brand">ShipDec<span>KK</span></div>
+                <p>ShipDecKK is your premier global partner in bespoke luxury yachts and commercial vessels. Excellence in engineering, naval architecture, and marine concierge since 2020.</p>
+                <p class="closing-copyright">&copy; 2026 ShipDecKK. All rights reserved.</p>
+            </div>
+
+            <div class="follow_us">
+                <h3>Social Fleet</h3>
+                <div class="iconsosmed">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <img src="assets/img/icons8-instagram-48.webp" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+                        <img src="assets/img/icons8-youtube-32.webp" alt="YouTube">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+                        <img src="assets/img/icons8-twitter-bird-50.webp" alt="Twitter">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="assets/img/icons8-facebook-48.webp" alt="Facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <img src="assets/img/icons8-linked-in-50.webp" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">
+                        <img src="assets/img/icons8-tiktok-50.webp" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
